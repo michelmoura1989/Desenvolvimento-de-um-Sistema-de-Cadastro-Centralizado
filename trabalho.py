@@ -1,7 +1,12 @@
 import tkinter as tk
 
+class Cliente:
+    def __init__(self, nome):
+        self.nome = nome
+
 def adicionar_cliente():
-    print("Cliente adicionado!")
+    cliente = Cliente("Nome Teste")
+    print(f"Cliente {cliente.nome} adicionado!")
 
 def main():
     root = tk.Tk()
